@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digikala</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <!--banner1-->
+    <div class="img1"><img src="./Media/1.jpg" alt="" /></div>
+    <!--end banner1-->
+    <!--search bar-->
+    <div class="bar1">
+      <div class="box1">
+        <div class="img"><img src="./Media/logo (1).svg" alt="" /></div>
+        <div class="block">
+          <div class="img"><img src="./Media/svgexport-3.svg" alt="" /></div>
+          <span>جستجو</span>
+        </div>
+      </div>
+      <div class="box2">
+        <div class="item">
+          <div class="img"><img src="./Media/svgexport-6.svg" alt="" /></div>
+          <p>ورود</p>
+          <p>ثبت‌نام</p>
+        </div>
+        <div class="img"><img src="./Media/svgexport-7.svg" alt="" /></div>
+      </div>
+    </div>
+    <!--end search bar-->
+    <!--menu1-->
+    <div class="menu1">
+      <div class="box1">
+        <div class="item">
+          <div class="img"><img src="./Media/svgexport-8.svg" alt=""></div>
+          <span1>دسته‌بندی کالاها</span1>
+        </div>
+        <div class="item">
+          <div class="img"><img src="./Media/svgexport-24.svg" alt=""></div>
+          <span2>شگفت‌انگیزها</span2>
+        </div>
+        <div class="item">
+          <div class="img"><img src="./Media/svgexport-25.svg" alt=""></div>
+          <span2>سوپرمارکت</span2>
+        </div>
+        <div class="item">
+          <div class="img"><img src="./Media/svgexport-26.svg" alt=""></div>
+          <span2>کارت هدیه</span2>
+        </div>
+        <div class="item">
+          <div class="img"><img src="./Media/svgexport-27.svg" alt=""></div>
+          <span2>پرفروش‌ترین‌ها</span2>
+        </div>
+        <div class="item">
+          <div class="img"><img src="./Media/svgexport-28.svg" alt=""></div>
+          <span2>تخفیف‌ها و پیشنهادها</span2>
+        </div>
+        <div class="item">
+          <span2>سوالی دارید؟</span2>
+        </div>
+        <div class="item">
+          <span2>در دیجی‌کالا بفروشید!</span2>
+        </div>
+      </div>
+      <div class="box2">
+        <div class="img"><img src="./Media/svgexport-29.svg" alt=""></div>
+        <span>لطفا شهر خود را انتخاب کنید</span>
+      </div>
+    </div>
+    <!--end menu1-->
+    <!--list1-->
+    <div class="list1">
+      <div class="box">
+        <div class="img"><img src="./Media/a1.jpeg" alt="" /></div>
+        <strong>خرید برنده</strong>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/a2.jpeg" alt="" /></div>
+        <strong>مسابقه</strong>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/a3.jpeg" alt="" /></div>
+        <strong>ارسال سریع</strong>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/a4.jpeg" alt="" /></div>
+        <strong>خونه‌ی گرم</strong>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/a5.jpeg" alt="" /></div>
+        <strong>شوینده</strong>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/a6.jpeg" alt="" /></div>
+        <strong>هدیه نقدی</strong>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/a7.jpeg" alt="" /></div>
+        <strong>خرید طلایی</strong>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/a8.jpeg" alt="" /></div>
+        <strong>مکمل غذایی</strong>
+      </div>
+    </div>
+    <!--end list1-->
+    <!--swiper1-->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./Media/g1.jpg" alt="" /></div>
+        <div class="swiper-slide"><img src="./Media/g2.jpg" alt="" /></div>
+        <div class="swiper-slide"><img src="./Media/g3.jpg" alt="" /></div>
+        <div class="swiper-slide"><img src="./Media/g4.jpg" alt="" /></div>
+        <div class="swiper-slide"><img src="./Media/g5.jpg" alt="" /></div>
+        <div class="swiper-slide"><img src="./Media/g6.jpg" alt="" /></div>
+        <div class="swiper-slide"><img src="./Media/g7.jpg" alt="" /></div>
+        <div class="swiper-slide"><img src="./Media/g8.jpg" alt="" /></div>
+        <div class="swiper-slide"><img src="./Media/g9.gif" alt="" /></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+      <div class="autoplay-progress">
+        <svg viewBox="0 0 48 48">
+          <circle cx="24" cy="24" r="20"></circle>
+        </svg>
+        <span></span>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const progressCircle = document.querySelector(".autoplay-progress svg");
+      const progressContent = document.querySelector(".autoplay-progress span");
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        on: {
+          autoplayTimeLeft(s, time, progress) {
+            progressCircle.style.setProperty("--progress", 1 - progress);
+            progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+          },
+        },
+      });
+    </script>
+    <!--end swiper1-->
+    <!--list2-->
+    <div class="list2">
+      <div class="box">
+        <div class="img"><img src="./Media/b1.png" alt="" /></div>
+        <span>دیجی‌کالا جت</span>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/b2.png" alt="" /></div>
+        <span>دیجی‌پی</span>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/b3.png" alt="" /></div>
+        <span>تولد استایل</span>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/b4.png" alt="" /></div>
+        <span>سوپرمارکت</span>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/b5.png" alt="" /></div>
+        <span>خرید برنده</span>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/b6.png" alt="" /></div>
+        <span>مسابقه عکاسی</span>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/b7.png" alt="" /></div>
+        <span>گیم نت</span>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/svgexport-22.svg" alt="" /></div>
+        <span>بیشتر</span>
+      </div>
+    </div>
+    <!--end list2-->
+    <!--items1-->
+    <div class="item1">
+      <div class="img"><img src="./Media/c1.jpg" alt="" /></div>
+      <div class="img"><img src="./Media/c2.gif" alt="" /></div>
+      <div class="img"><img src="./Media/c3.jpg" alt="" /></div>
+      <div class="img"><img src="./Media/c4.jpg" alt="" /></div>
+    </div>
+    <!--end items1-->
+    <!--list3-->
+    <div class="title3"><h3>خرید بر اساس دسته‌بندی</h3></div>
+    <div class="list3">
+      <div class="box">
+        <div class="img"><img src="./Media/d1.png" alt="" /></div>
+        <p>موبایل</p>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/d2.png" alt="" /></div>
+        <p>کالای دیجیتال</p>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/d3.png" alt="" /></div>
+        <p>خانه و آشپزخانه</p>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/d4.png" alt="" /></div>
+        <p>مد و پوشاک</p>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/d5.png" alt="" /></div>
+        <p>کالاهای سوپرمارکتی</p>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/d6.png" alt="" /></div>
+        <p>کتاب، لوازم تحریر و هنر</p>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/d7.png" alt="" /></div>
+        <p>اسباب بازی، کودک و نوزاد</p>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/d8.png" alt="" /></div>
+        <p>زیبایی و سلامت</p>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/d9.png" alt="" /></div>
+        <p>ورزش و سفر</p>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/d10.png" alt="" /></div>
+        <p>ابزارآلات و تجهیزات</p>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/d11.png" alt="" /></div>
+        <p>خودرو و موتورسیکلت</p>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/d12.png" alt="" /></div>
+        <p>محصولات بومی و محلی</p>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/d13.png" alt="" /></div>
+        <p>کارت هدیه</p>
+      </div>
+    </div>
+    <!--end list3-->
+    <!--items2-->
+    <div class="item2">
+      <div class="img"><img src="./Media/e1.jpg" alt="" /></div>
+      <div class="img"><img src="./Media/e2.jpg" alt="" /></div>
+    </div>
+    <!--end items2-->
+    <!--list4-->
+    <div class="title4"><h3>پیشنهاد دیجی‌کالا</h3></div>
+    <div class="list4">
+      <div class="box">
+        <div class="img"><img src="./Media/f1.jpg" alt="" /></div>
+        <h4>کیف و کاور گوشی</h4>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/f2.jpg" alt="" /></div>
+        <h4>گوشی موبایل</h4>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/f3.jpg" alt="" /></div>
+        <h4>سایر لوازم تزئینی</h4>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/f4.jpg" alt="" /></div>
+        <h4>اسپیکر (بلندگو)</h4>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/f5.jpg" alt="" /></div>
+        <h4>ست لباس راحتی نوزاد</h4>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/f6.jpg" alt="" /></div>
+        <h4>بادی اسپلش</h4>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/f7.jpg" alt="" /></div>
+        <h4>تجهیزات نور زنده</h4>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/f8.jpg" alt="" /></div>
+        <h4>هدفون، هدست و ...</h4>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/f9.jpg" alt="" /></div>
+        <h4>کابل شارژ و مبدل</h4>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/f10.jpg" alt="" /></div>
+        <h4>ساعت هوشمند</h4>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/f11.jpg" alt="" /></div>
+        <h4>آشنایی با فنون</h4>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/f12.jpg" alt="" /></div>
+        <h4>پایه نگهدارنده گوشی و ...</h4>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/f13.jpg" alt="" /></div>
+        <h4>جوراب مردانه</h4>
+      </div>
+      <div class="box">
+        <div class="img"><img src="./Media/f14.jpg" alt="" /></div>
+        <h4>لامپ خودرو</h4>
+      </div>
+    </div>
+    <!--end list4-->
+    <!--container1-->
+    <div class="container1">
+      <div class="box">
+        <h4>گوشی موبایل</h4>
+        <p>بر اساس بازدیدهای شما</p>
+        <div class="item">
+          <div class="img1"><img src="./Media/h1.jpg" alt="" /></div>
+          <div class="img2"><img src="./Media/h2.jpg" alt="" /></div>
+          <div class="img3"><img src="./Media/h3.jpg" alt="" /></div>
+          <div class="img4"><img src="./Media/h4.jpg" alt="" /></div>
+        </div>
+        <div class="package">
+          <span>مشاهده</span>
+          <div class="img"><img src="./Media/svgexport-31.svg" alt="" /></div>
+        </div>
+      </div>
+      <div class="box">
+        <h4>کیف و کاور گوشی</h4>
+        <p>بر اساس بازدیدهای شما</p>
+        <div class="item">
+          <div class="img1"><img src="./Media/h5.jpg" alt="" /></div>
+          <div class="img2"><img src="./Media/h6.jpg" alt="" /></div>
+          <div class="img3"><img src="./Media/h7.jpg" alt="" /></div>
+          <div class="img4"><img src="./Media/h8.jpg" alt="" /></div>
+        </div>
+        <div class="package">
+          <span>مشاهده</span>
+          <div class="img"><img src="./Media/svgexport-31.svg" alt="" /></div>
+        </div>
+      </div>
+      <div class="box">
+        <h4>هدفون، هدست و هندزفری</h4>
+        <p>بر اساس بازدیدهای شما</p>
+        <div class="item">
+          <div class="img1"><img src="./Media/h9.jpg" alt="" /></div>
+          <div class="img2"><img src="./Media/h10.jpg" alt="" /></div>
+          <div class="img3"><img src="./Media/h11.jpg" alt="" /></div>
+          <div class="img4"><img src="./Media/h12.jpg" alt="" /></div>
+        </div>
+        <div class="package">
+          <span>مشاهده</span>
+          <div class="img"><img src="./Media/svgexport-31.svg" alt="" /></div>
+        </div>
+      </div>
+      <div class="box">
+        <h4>ساعت هوشمند</h4>
+        <p>بر اساس بازدیدهای شما</p>
+        <div class="item">
+          <div class="img1"><img src="./Media/h13.jpg" alt="" /></div>
+          <div class="img2"><img src="./Media/h14.jpg" alt="" /></div>
+          <div class="img3"><img src="./Media/h15.jpg" alt="" /></div>
+          <div class="img4"><img src="./Media/h16.jpg" alt="" /></div>
+        </div>
+        <div class="package">
+          <span>مشاهده</span>
+          <div class="img"><img src="./Media/svgexport-31.svg" alt="" /></div>
+        </div>
+      </div>
+    </div>
+    <!--end container1-->
+    <!--container2-->
+    <div class="container2">
+      <div class="box">
+        <h4>لپ تاپ و الترابوک</h4>
+        <p>بر اساس بازدیدهای شما</p>
+        <div class="item">
+          <div class="img1"><img src="./Media/i1.jpg" alt="" /></div>
+          <div class="img2"><img src="./Media/i2.jpg" alt="" /></div>
+          <div class="img3"><img src="./Media/i3.jpg" alt="" /></div>
+          <div class="img4"><img src="./Media/i4.jpg" alt="" /></div>
+        </div>
+        <div class="package">
+          <span>مشاهده</span>
+          <div class="img"><img src="./Media/svgexport-31.svg" alt="" /></div>
+        </div>
+      </div>
+      <div class="box">
+        <h4>سایر لوازم خودرو</h4>
+        <p>بر اساس بازدیدهای شما</p>
+        <div class="item">
+          <div class="img1"><img src="./Media/i5.jpg" alt="" /></div>
+          <div class="img2"><img src="./Media/i6.jpg" alt="" /></div>
+          <div class="img3"><img src="./Media/i7.jpg" alt="" /></div>
+          <div class="img4"><img src="./Media/i8.jpg" alt="" /></div>
+        </div>
+        <div class="package">
+          <span>مشاهده</span>
+          <div class="img"><img src="./Media/svgexport-31.svg" alt="" /></div>
+        </div>
+      </div>
+      <div class="box">
+        <h4>مکمل دارویی</h4>
+        <p>بر اساس بازدیدهای شما</p>
+        <div class="item">
+          <div class="img1"><img src="./Media/i9.jpg" alt="" /></div>
+          <div class="img2"><img src="./Media/i10.jpg" alt="" /></div>
+          <div class="img3"><img src="./Media/i11.jpg" alt="" /></div>
+          <div class="img4"><img src="./Media/i12.jpg" alt="" /></div>
+        </div>
+        <div class="package">
+          <span>مشاهده</span>
+          <div class="img"><img src="./Media/svgexport-31.svg" alt="" /></div>
+        </div>
+      </div>
+      <div class="box">
+        <h4>کفش ورزشی مردانه</h4>
+        <p>بر اساس بازدیدهای شما</p>
+        <div class="item">
+          <div class="img1"><img src="./Media/i13.jpg" alt="" /></div>
+          <div class="img2"><img src="./Media/i14.jpg" alt="" /></div>
+          <div class="img3"><img src="./Media/i15.jpg" alt="" /></div>
+          <div class="img4"><img src="./Media/i16.jpg" alt="" /></div>
+        </div>
+        <div class="package">
+          <span>مشاهده</span>
+          <div class="img"><img src="./Media/svgexport-31.svg" alt="" /></div>
+        </div>
+      </div>
+    </div>
+    <!--end container2-->
+    <div class="banner"><img src="./Media/j.jpg" alt="" /></div>
+    <!--items3-->
+    <div class="items3">
+      <div class="title">
+        <h5>خواندنی‌ها</h5>
+        <div class="package">
+          <span>مطالب بیشتر در دیجی‌کالا مگ</span>
+          <div class="img"><img src="./Media/svgexport-30.svg" alt="" /></div>
+        </div>
+      </div>
+      <div class="area">
+        <div class="box">
+          <div class="img"><img src="./Media/k1.jpg" alt="" /></div>
+          <p>بررسی 2 مدل جاکلیدی با طرح سکه بیت کوین و MADMAX</p>
+        </div>
+        <div class="box">
+          <div class="img"><img src="./Media/k2.jpg" alt="" /></div>
+          <p>بررسی کوتاه ردمی نوت 12 پرو اسپید؛ همان پوکو X5 پرو</p>
+        </div>
+        <div class="box">
+          <div class="img"><img src="./Media/k3.jpg" alt="" /></div>
+          <p>
+            آشنایی با 11 پاور بانک برتر که در بلک فرایدی 1402 می‌توانید بخرید
+          </p>
+        </div>
+        <div class="box">
+          <div class="img"><img src="./Media/k4.jpg" alt="" /></div>
+          <p>بررسی اسپیکر بلوتوثی WS-887؛ ارزان‌قیمت و بسیار کوچک</p>
+        </div>
+      </div>
+    </div>
+    <!--end items3-->
+    <!--footer-->
+    <footer>
+      <div class="item1">
+        <div class="img">
+          <img src="./Media/digikala - دیجی کالا.svg" alt="" />
+        </div>
+        <button>
+          <span>بازگشت به بالا</span>
+          <div class="img"><img src="./Media/svgexport-41.svg" alt="" /></div>
+        </button>
+      </div>
+      <div class="item2">
+        <p>تلفن پشتیبانی 6193000 - 021</p>
+        <p>7 روز هفته، 24 ساعت پاسخگوی شما هستیم</p>
+      </div>
+      <div class="item3">
+        <div class="box">
+          <div class="img"><img src="./Media/l1.svg" alt="" /></div>
+          <p>امکان تحویل اکسپرس</p>
+        </div>
+        <div class="box">
+          <div class="img"><img src="./Media/l2.svg" alt="" /></div>
+          <p>امکان پرداخت در محل</p>
+        </div>
+        <div class="box">
+          <div class="img"><img src="./Media/l3.svg" alt="" /></div>
+          <p>7 روز هفته، 24 ساعته</p>
+        </div>
+        <div class="box">
+          <div class="img"><img src="./Media/l4.svg" alt="" /></div>
+          <p>هفت روز ضمانت بازگشت کالا</p>
+        </div>
+        <div class="box">
+          <div class="img"><img src="./Media/l2.svg" alt="" /></div>
+          <p>ضمانت اصل بودن کالا</p>
+        </div>
+      </div>
+      <div class="item4">
+        <div class="box">
+          <p>با دیجی‌کالا</p>
+          <a href="#">اتاق خبر دیجی‌کالا</a>
+          <a href="#">فروش در دیجی‌کالا</a>
+          <a href="#">فرصت‌های شغلی</a>
+          <a href="#">گزارش تخلف در دیجی‌کالا</a>
+          <a href="#">تماس با دیجی‌کالا</a>
+          <a href="#">درباره دیجی‌مالا</a>
+        </div>
+        <div class="box">
+          <p>خدمات مشتریان</p>
+          <a href="#">پاسخ به پرسش‌های متداول</a>
+          <a href="#">رویه‌های بازگرداندن کالا</a>
+          <a href="#">شرایط استفاده</a>
+          <a href="#">حریم خصوصی</a>
+          <a href="#">گزارش باگ</a>
+        </div>
+        <div class="box">
+          <p>راهنمای خرید از دیجی‌کالا</p>
+          <a href="#">نحوه ثبت سفارش</a>
+          <a href="#">رویه ارسال سفارش</a>
+          <a href="#">شیوه‌های پرداخت</a>
+        </div>
+        <div class="block">
+          <h4>همراه ما باشید!</h4>
+          <div class="package">
+            <div class="img"><img src="./Media/svgexport-42.svg" alt="" /></div>
+            <div class="img"><img src="./Media/svgexport-43.svg" alt="" /></div>
+            <div class="img"><img src="./Media/svgexport-44.svg" alt="" /></div>
+            <div class="img"><img src="./Media/svgexport-45.svg" alt="" /></div>
+          </div>
+          <h4>با ثبت ایمیل، از جدیدترین تخفیف‌ها با خبر شوید</h4>
+          <form action="">
+            <input type="email" name="" id="" />
+            <input type="submit" value="" />
+          </form>
+        </div>
+      </div>
+      <div class="item5">
+        <div class="box1">
+          <div class="img"><img src="./Media/m1.png" alt="" /></div>
+          <h3>دانلود اپلیکیشن دیجی‌کالا</h3>
+        </div>
+        <div class="box2">
+          <div class="img1">
+            <img src="./Media/دریافت از کافه_بازار.svg" alt="" />
+          </div>
+          <div class="img1">
+            <img src="./Media/دریافت از مایکت.svg" alt="" />
+          </div>
+          <div class="img1">
+            <img src="./Media/دریافت از سیب_اپ.svg" alt="" />
+          </div>
+          <div class="img2"><img src="./Media/svgexport-46.svg" alt="" /></div>
+        </div>
+      </div>
+      <div class="item6">
+        <div class="box1">
+          <h2>فروشگاه اینترنتی دیجی‌کالا، بررسی، انتخاب و خرید آنلاین</h2>
+          <p></p>
+          <div class="package">
+            <span>مشاهده بیشتر</span>
+            <div class="img"><img src="./Media/svgexport-30.svg" alt="" /></div>
+          </div>
+        </div>
+        <div class="box2">
+          <div class="img"><img src="./Media/n1.png" alt="" /></div>
+          <div class="img"><img src="./Media/n2.png" alt="" /></div>
+          <div class="img"><img src="./Media/n3.png" alt="" /></div>
+        </div>
+      </div>
+      <div class="item7">
+        <p>
+          برای استفاده از مطالب دیجی‌کالا، داشتن «هدف غیرتجاری» و ذکر «منبع»
+          کافیست. تمام حقوق اين وب‌سايت نیز برای شرکت نوآوران فن آوازه (فروشگاه
+          آنلاین دیجی‌کالا) است.
+        </p>
+      </div>
+      <div class="item8">
+        <div class="img"><img src="./Media/digimag.svg" alt="" /></div>
+        <div class="img"><img src="./Media/digipay.svg" alt="" /></div>
+        <div class="img"><img src="./Media/digistyle.svg" alt="" /></div>
+        <div class="img"><img src="./Media/digiplus.svg" alt="" /></div>
+        <div class="img"><img src="./Media/digiclub.svg" alt="" /></div>
+        <div class="img"><img src="./Media/jet.svg" alt="" /></div>
+        <div class="img"><img src="./Media/magnet.svg" alt="" /></div>
+        <div class="img"><img src="./Media/digiMehr.svg" alt="" /></div>
+        <div class="img"><img src="./Media/diginext.svg" alt="" /></div>
+        <div class="img"><img src="./Media/digiexpress.svg" alt="" /></div>
+        <div class="img"><img src="./Media/ganjeh.svg" alt="" /></div>
+        <div class="img"><img src="./Media/digify.svg" alt="" /></div>
+        <div class="img"><img src="./Media/smartech.svg" alt="" /></div>
+        <div class="img">
+          <img src="./Media/digikala-business.svg" alt="" />
+        </div>
+        <div class="img"><img src="./Media/دیجی_کالا سرویس.svg" alt="" /></div>
+      </div>
+    </footer>
+    <!--end footer-->
+  </body>
+</html>
